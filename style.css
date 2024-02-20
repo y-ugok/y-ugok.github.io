@@ -1,10 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
+/* Bodoni Moda */
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Noto+Sans+JP&display=swap");
 /* --------------------------------------------- */
 /* ▼モバイルファースト (全環境に共通のデザイン) */
 /* --------------------------------------------- */
 body {
   margin: 0;
   font-family: "Nanum Myeongjo", serif;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #5a5547;
   background-color: #f8f7f6;
+}
+header,
+footer,
+.title > h1,
+#center > h1,
+.about + h2,
+.text {
+  font-family: "Nanum Myeongjo", serif;
+  color: #b3b3b3;
+}
+.container h1 {
+  color: rgb(22 44 229);
+  font-family: "Nanum Myeongjo", serif;
 }
 main {
   width: 85%;
@@ -18,12 +36,10 @@ header {
   z-index: 2;
 }
 header ul {
-  /* position: fixed;
-  right: 15%; */
   list-style-type: none;
   display: flex;
   justify-content: flex-end;
-  margin-right: 10%;
+  margin-right: 7%;
   margin-top: 0;
   margin-bottom: 0;
   padding: 0.5em 0;
@@ -31,6 +47,9 @@ header ul {
 .about ul {
   padding-inline-start: 0;
   list-style-type: inside;
+}
+header li {
+  font-size: 1em;
 }
 li {
   /* font-size: 4.5vw; */
@@ -40,6 +59,7 @@ li {
 a {
   text-decoration: none;
   color: #686564;
+  font-size: 1em;
 }
 .container img {
   width: 100%;
@@ -60,18 +80,18 @@ a {
   text-align: center;
   z-index: 1;
   padding: 0.5em;
-  font-size: 2.5em;
 }
 .title {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 50px 0 0;
+  color: #686564;
 }
 .title div {
   width: 75%;
   height: 1px;
-  background-color: #797e79;
+  background-color: #686564;
 }
 
 .img_inner img {
@@ -85,6 +105,9 @@ a {
 #center {
   text-align: center;
 }
+#center > h1 {
+  font-size: 2.5em;
+}
 #center > img {
   width: 250px;
   height: 250px;
@@ -97,7 +120,7 @@ a {
 }
 .about li:before {
   content: "・";
-  color: #81bfd9;
+  color: #781d16;
 }
 .about li:last-child {
   list-style-type: none;
@@ -107,8 +130,9 @@ h2 + p {
   margin-left: 2.5vw;
 }
 .text {
-  color: #440000;
+  color: #620000;
   font-style: italic;
+  font-size: 2.5em;
 }
 .justsize {
   width: 80%;
@@ -120,7 +144,7 @@ h2 + p {
 }
 .center {
   text-align: center;
-  margin: 3.5vw;
+  margin: 45px 0 50px;
 }
 #button {
   border-radius: 2em;
@@ -143,8 +167,7 @@ footer {
 }
 
 footer {
-  /* padding: 0.5em 0; */
-  background-color: #c4a550;
+  background-color: #d3d3d3;
   margin-top: 60px;
   font-size: 1.5em;
 }
@@ -152,6 +175,7 @@ h3 {
   text-align: center;
 }
 footer p {
+  margin-top: 100px;
   margin-bottom: 0;
   padding: 1em;
   color: white;
@@ -172,6 +196,8 @@ footer p {
   height: 100px;
 }
 .title > h1 {
+  color: #686564;
+
   font-size: 3em;
   padding-right: 0.5em;
 }
@@ -182,15 +208,15 @@ footer p {
   main {
     width: 70%;
   }
-  li {
-    font-size: 1.5vw;
+  .about li {
+    font-size: 1.35vw;
   }
   #center > img {
     width: 450px;
     height: 450px;
   }
-  .container img:first-child {
-    margin-top: 100px;
+  container img:first-child {
+    margin-top: 135px;
   }
   .justsize img {
     width: 60%;
@@ -211,6 +237,19 @@ footer p {
   .title > h1 {
     font-size: 3em;
     padding-right: 0;
+  }
+  .text {
+    margin-left: 2em;
+    font-size: 2.5em;
+  }
+  header ul {
+    margin-right: 15%;
+  }
+  .container img {
+    margin-top: 120px;
+  }
+  a {
+    font-size: 1.5em;
   }
 }
 /* ------------------------------------ */
