@@ -124,10 +124,10 @@ a {
 .about li:last-child {
   list-style-type: none;
 }
-.about + h2,
+/* .about + h2,
 .name {
   margin-left: 0.8vw;
-}
+} */
 .text {
   color: #620000;
   font-style: italic;
