@@ -52,9 +52,7 @@ header li {
   font-size: 1em;
 }
 li {
-  /* font-size: 4.5vw; */
-  /* font-size: */
-  padding: 1.1vw 0 0 2vw;
+  padding: 1.1vw 0 0 0.3vw;
 }
 a {
   text-decoration: none;
@@ -126,8 +124,9 @@ a {
   list-style-type: none;
 }
 .about + h2,
-h2 + p {
-  margin-left: 2.5vw;
+h2 + p,
+.name {
+  margin-left: 0.8vw;
 }
 .text {
   color: #620000;
